@@ -18,6 +18,8 @@ window.onscroll = function () {
 // Hamburger
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');
+const alertX = document.querySelector('#alert-form');
+const buttonX = document.querySelector('#button-x');
 
 hamburger.addEventListener('click', function () {
   hamburger.classList.toggle('hamburger-active');
@@ -30,6 +32,10 @@ window.addEventListener('click', function (e) {
     hamburger.classList.remove('hamburger-active');
     navMenu.classList.add('hidden');
   }
+});
+
+buttonX.addEventListener('click', function () {
+  alertX.classList.toggle('hidden');
 });
 
 // Darkmode toggle
